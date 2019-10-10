@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hyperledger-labs/minbft/messages"
+	messages "github.com/hyperledger-labs/minbft/messages/protobuf"
 )
 
 // commitValidator validates a Commit message.

@@ -28,12 +28,12 @@ import (
 
 	"github.com/hyperledger-labs/minbft/api"
 	"github.com/hyperledger-labs/minbft/core/internal/peerstate"
-	"github.com/hyperledger-labs/minbft/messages"
 	"github.com/hyperledger-labs/minbft/usig"
 
 	mock_api "github.com/hyperledger-labs/minbft/api/mocks"
 	mock_peerstate "github.com/hyperledger-labs/minbft/core/internal/peerstate/mocks"
-	mock_messages "github.com/hyperledger-labs/minbft/messages/mocks"
+	messages "github.com/hyperledger-labs/minbft/messages/protobuf"
+	mock_messages "github.com/hyperledger-labs/minbft/messages/protobuf/mocks"
 )
 
 func TestMakeUIVerifier(t *testing.T) {

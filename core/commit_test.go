@@ -23,11 +23,13 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	testifymock "github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger-labs/minbft/messages"
+	testifymock "github.com/stretchr/testify/mock"
+
 	"github.com/hyperledger-labs/minbft/usig"
+
+	messages "github.com/hyperledger-labs/minbft/messages/protobuf"
 )
 
 func TestMakeCommitValidator(t *testing.T) {

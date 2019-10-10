@@ -30,10 +30,10 @@ import (
 	testifymock "github.com/stretchr/testify/mock"
 
 	"github.com/hyperledger-labs/minbft/core/internal/clientstate"
-	"github.com/hyperledger-labs/minbft/messages"
 
 	mock_api "github.com/hyperledger-labs/minbft/api/mocks"
 	mock_clientstate "github.com/hyperledger-labs/minbft/core/internal/clientstate/mocks"
+	messages "github.com/hyperledger-labs/minbft/messages/protobuf"
 )
 
 func TestMakeRequestProcessor(t *testing.T) {

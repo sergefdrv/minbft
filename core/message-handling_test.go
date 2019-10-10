@@ -29,13 +29,13 @@ import (
 	logging "github.com/op/go-logging"
 	testifymock "github.com/stretchr/testify/mock"
 
-	"github.com/hyperledger-labs/minbft/messages"
+	"github.com/hyperledger-labs/minbft/core/internal/clientstate"
 	"github.com/hyperledger-labs/minbft/usig"
 
-	"github.com/hyperledger-labs/minbft/core/internal/clientstate"
 	mock_clientstate "github.com/hyperledger-labs/minbft/core/internal/clientstate/mocks"
 	mock_messagelog "github.com/hyperledger-labs/minbft/core/internal/messagelog/mocks"
-	mock_messages "github.com/hyperledger-labs/minbft/messages/mocks"
+	messages "github.com/hyperledger-labs/minbft/messages/protobuf"
+	mock_messages "github.com/hyperledger-labs/minbft/messages/protobuf/mocks"
 )
 
 func TestMakeIncomingMessageHandler(t *testing.T) {
